@@ -15,11 +15,11 @@
 
 # Versioning System
 FLUID_CODENAME := Rum
-FLUID_NUM_VER := 1.7
+FLUID_NUM_VER := 1.7.1
 
 TARGET_PRODUCT_SHORT := $(subst fluid_,,$(FLUID_BUILD_TYPE))
 
-FLUID_BUILD_TYPE ?= UNOFFICIAL
+FLUID_BUILD_TYPE ?= LTS
 
 # Only include Updater for official, weeklies, CI and nightly builds
 ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(FLUID_BUILD_TYPE)),)
